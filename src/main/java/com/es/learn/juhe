@@ -1,0 +1,43 @@
+ AggregationBuilders.terms("age-group").field("age").order(Terms.Order.count(false))
+ script.append(" && " + "params."+"a"+i.toString()+"<" +"params."+"b"+(++j).toString());
+BucketSelectorPipelineAggregationBuilder pipe_selector = PipelineAggregatorBuilders.bucketSelector("result_buckets", result_map,new Script(script.toString()));
+
+
+GET /company/employee/_search
+{
+	"size": 0,
+	"aggs": {
+		"country-group": {
+			"terms": {
+				"field": "country"
+			},
+			"aggs": {
+				"age-group": {
+					"terms": {
+						"field": "age",
+						"order": {
+							"_count": "asc"
+						}
+					},
+					"aggs": {
+						"salary1": {
+							"avg": {
+								"field": "salary"
+							}
+						},
+						"dd": {
+							"bucket_selector": {
+								"buckets_path": {
+									"userCount": "salary1"
+								},
+								"script": "params.userCount > 10007"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
