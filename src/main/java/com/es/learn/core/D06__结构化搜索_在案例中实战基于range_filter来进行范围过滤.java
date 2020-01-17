@@ -10,7 +10,7 @@ import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
 import java.net.InetAddress;
 
-public class D06_结构化搜索_在案例中实战使用term_filter来搜索数据 {
+public class D06__结构化搜索_在案例中实战基于range_filter来进行范围过滤 {
     public static void main(String[] args) throws Exception {
         Settings settings = Settings.builder()
                 .put("cluster.name", "elasticsearch")
