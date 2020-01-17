@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class 结构化搜索_在案例中实战基于bool组合多个filter条件来搜索数据 {
+public class D04结构化搜索_在案例中实战基于bool组合多个filter条件来搜索数据 {
     public static void main(String[] args) throws Exception {
         Settings settings = Settings.builder()
                 .put("cluster.name", "elasticsearch")

@@ -9,9 +9,8 @@ import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 
-public class 结构化搜索_在案例中实战使用term_filter来搜索数据 {
+public class D06_结构化搜索_在案例中实战使用term_filter来搜索数据 {
     public static void main(String[] args) throws Exception {
         Settings settings = Settings.builder()
                 .put("cluster.name", "elasticsearch")
