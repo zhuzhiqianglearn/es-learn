@@ -1,118 +1,142 @@
-近似匹配
+课程大纲
 
-1、什么是近似匹配
+1、前缀搜索
 
-两个句子
+C3D0-KD345
+C3K5-DFG65
+C4I8-UI365
 
-java is my favourite programming language, and I also think spark is a very good big data system.
-java spark are very related, because scala is spark's programming language and scala is also based on jvm like java.
+C3 --> 上面这两个都搜索出来 --> 根据字符串的前缀去搜索
 
-match query，搜索java spark
+不用帖子的案例背景，因为比较简单，直接用自己手动建的新索引，给大家演示一下就可以了
 
+PUT my_index
 {
-	"match": {
-		"content": "java spark"
-	}
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "title": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
 }
 
-match query，只能搜索到包含java和spark的document，但是不知道java和spark是不是离的很近
-
-包含java或包含spark，或包含java和spark的doc，都会被返回回来。我们其实并不知道哪个doc，java和spark距离的比较近。如果我们就是希望搜索java spark，中间不能插入任何其他的字符，那这个时候match去做全文检索，能搞定我们的需求吗？答案是，搞不定。
-
-如果我们要尽量让java和spark离的很近的document优先返回，要给它一个更高的relevance score，这就涉及到了proximity match，近似匹配
-
-如果说，要实现两个需求：
-
-1、java spark，就靠在一起，中间不能插入任何其他字符，就要搜索出来这种doc
-2、java spark，但是要求，java和spark两个单词靠的越近，doc的分数越高，排名越靠前
-
-要实现上述两个需求，用match做全文检索，是搞不定的，必须得用proximity match，近似匹配
-
-phrase match，proximity match：短语匹配，近似匹配
-
-这一讲，要学习的是phrase match，就是仅仅搜索出java和spark靠在一起的那些doc，比如有个doc，是java use'd spark，不行。必须是比如java spark are very good friends，是可以搜索出来的。
-
-phrase match，就是要去将多个term作为一个短语，一起去搜索，只有包含这个短语的doc才会作为结果返回。不像是match，java spark，java的doc也会返回，spark的doc也会返回。
-
-2、match_phrase
-
-GET /forum/article/_search
+GET my_index/my_type/_search
 {
   "query": {
-    "match": {
-      "content": "java spark"
+    "prefix": {
+      "title": {
+        "value": "C3"
+      }
     }
   }
 }
 
-单单包含java的doc也返回了，不是我们想要的结果
+2、前缀搜索的原理
 
-POST /forum/article/5/_update
+prefix query不计算relevance score，与prefix filter唯一的区别就是，filter会cache bitset
+
+扫描整个倒排索引，举例说明
+
+前缀越短，要处理的doc越多，性能越差，尽可能用长前缀搜索
+
+前缀搜索，它是怎么执行的？性能为什么差呢？
+
+match
+
+C3-D0-KD345
+C3-K5-DFG65
+C4-I8-UI365
+
+全文检索
+
+每个字符串都需要被分词
+
+c3			doc1,doc2
+d0
+kd345
+k5
+dfg65
+c4
+i8
+ui365
+
+c3 --> 扫描倒排索引 --> 一旦扫描到c3，就可以停了，因为带c3的就2个doc，已经找到了 --> 没有必要继续去搜索其他的term了
+
+match性能往往是很高的
+
+不分词
+
+C3-D0-KD345
+C3-K5-DFG65
+C4-I8-UI365
+
+c3 --> 先扫描到了C3-D0-KD345，很棒，找到了一个前缀带c3的字符串 --> 还是要继续搜索的，因为后面还有一个C3-K5-DFG65，也许还有其他很多的前缀带c3的字符串 --> 你扫描到了一个前缀匹配的term，不能停，必须继续搜索 --> 直到扫描完整个的倒排索引，才能结束
+
+因为实际场景中，可能有些场景是全文检索解决不了的
+
+C3D0-KD345
+C3K5-DFG65
+C4I8-UI365
+
+c3d0
+kd345
+
+c3 --> match --> 扫描整个倒排索引，能找到吗
+
+c3 --> 只能用prefix
+
+prefix性能很差
+
+3、通配符搜索
+
+跟前缀搜索类似，功能更加强大
+
+C3D0-KD345
+C3K5-DFG65
+C4I8-UI365
+
+5字符-D任意个字符5
+
+5?-*5：通配符去表达更加复杂的模糊搜索的语义
+
+GET my_index/my_type/_search
 {
-  "doc": {
-    "content": "spark is best big data solution based on scala ,an programming language similar to java spark"
+  "query": {
+    "wildcard": {
+      "title": {
+        "value": "C?K*5"
+      }
+    }
   }
 }
 
-将一个doc的content设置为恰巧包含java spark这个短语
+?：任意字符
+*：0个或任意多个字符
 
-match_phrase语法
+性能一样差，必须扫描整个倒排索引，才ok
 
-GET /forum/article/_search
+4、正则搜索
+
+GET /my_index/my_type/_search 
 {
-    "query": {
-        "match_phrase": {
-            "content": "java spark"
-        }
+  "query": {
+    "regexp": {
+      "title": "C[0-9].+"
     }
+  }
 }
 
-成功了，只有包含java spark这个短语的doc才返回了，只包含java的doc不会返回
+C[0-9].+
 
-3、term position
+[0-9]：指定范围内的数字
+[a-z]：指定范围内的字母
+.：一个字符
++：前面的正则表达式可以出现一次或多次
 
-hello world, java spark		doc1
-hi, spark java				doc2
+wildcard和regexp，与prefix原理一致，都会扫描整个索引，性能很差
 
-hello 		doc1(0)		
-wolrd		doc1(1)
-java		doc1(2) doc2(2)
-spark		doc1(3) doc2(1)
+主要是给大家介绍一些高级的搜索语法。在实际应用中，能不用尽量别用。性能太差了。
 
-了解什么是分词后的position
-
-GET _analyze
-{
-  "text": "hello world, java spark",
-  "analyzer": "standard"
-}
-4、match_phrase的基本原理
-
-索引中的position，match_phrase
-
-hello world, java spark		doc1
-hi, spark java				doc2
-
-hello 		doc1(0)		
-wolrd		doc1(1)
-java		doc1(2) doc2(2)
-spark		doc1(3) doc2(1)
-
-java spark --> match phrase
-
-java spark --> java和spark
-
-java --> doc1(2) doc2(2)
-spark --> doc1(3) doc2(1)
-
-要找到每个term都在的一个共有的那些doc，就是要求一个doc，必须包含每个term，才能拿出来继续计算
-
-doc1 --> java和spark --> spark position恰巧比java大1 --> java的position是2，spark的position是3，恰好满足条件
-
-doc1符合条件
-
-doc2 --> java和spark --> java position是2，spark position是1，spark position比java position小1，而不是大1 --> 光是position就不满足，那么doc2不匹配
-
-必须理解这块原理！！！！
-
-因为后面的proximity match就是原理跟这个一模一样！！！
