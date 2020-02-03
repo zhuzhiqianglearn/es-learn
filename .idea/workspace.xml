@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0eff0f-493d-4e51-adf9-71253bdb668a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索_利用slop实现近似匹配.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt" />
@@ -24,16 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="D18_match_phrase搜索.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="D18_match_phrase搜索_利用slop实现近似匹配.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索_利用slop实现近似匹配.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,8 +34,8 @@
       <file leaf-file-name="D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1583">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="2544">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,28 +44,38 @@
       <file leaf-file-name="D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+            <state relative-caret-position="1200">
+              <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="课程笔记.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="91">
               <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="28" column="76" lean-forward="false" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="课程笔记.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -467,6 +464,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java" />
       </list>
     </option>
   </component>
@@ -514,9 +512,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -570,7 +569,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,16 +580,16 @@
     <property name="SearchEverywhereHistoryKey" value="best_fields&#9;PSI&#9;JAVA://org.elasticsearch.index.query.MultiMatchQueryBuilder.Type#BEST_FIELDS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\demo2\src\main\java\com\es\learn\core" />
-      <recent name="C:\code\demo2\src\main\java\com\es\learn" />
-      <recent name="C:\code\demo2\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.es.learn.core" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\demo2\src\main\java\com\es\learn\core" />
+      <recent name="C:\code\demo2\src\main\java\com\es\learn" />
+      <recent name="C:\code\demo2\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,31 +604,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术">
+  <component name="RunManager" selected="Application.D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="D18_match_phrase搜索" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.es.learn.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D18_match_phrase搜索" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="demo2" />
-      <envs />
     </configuration>
     <configuration name="D18_match_phrase搜索_利用slop实现近似匹配" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -697,6 +676,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="demo2" />
+      <envs />
+    </configuration>
+    <configuration name="D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.es.learn.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -783,19 +781,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索" />
-      <item index="1" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索_利用slop实现近似匹配" />
-      <item index="2" class="java.lang.String" itemvalue="Application.D20_match和match_phrase搜索_利用slop实现近似匹配组合使用" />
-      <item index="3" class="java.lang.String" itemvalue="Application.D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能" />
-      <item index="4" class="java.lang.String" itemvalue="Application.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术" />
+      <item index="0" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索_利用slop实现近似匹配" />
+      <item index="1" class="java.lang.String" itemvalue="Application.D20_match和match_phrase搜索_利用slop实现近似匹配组合使用" />
+      <item index="2" class="java.lang.String" itemvalue="Application.D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能" />
+      <item index="3" class="java.lang.String" itemvalue="Application.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术" />
+      <item index="4" class="java.lang.String" itemvalue="Application.D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术" />
-        <item index="1" class="java.lang.String" itemvalue="Application.D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能" />
-        <item index="2" class="java.lang.String" itemvalue="Application.D20_match和match_phrase搜索_利用slop实现近似匹配组合使用" />
-        <item index="3" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索_利用slop实现近似匹配" />
-        <item index="4" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索" />
+        <item index="0" class="java.lang.String" itemvalue="Application.D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐" />
+        <item index="1" class="java.lang.String" itemvalue="Application.D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术" />
+        <item index="2" class="java.lang.String" itemvalue="Application.D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能" />
+        <item index="3" class="java.lang.String" itemvalue="Application.D20_match和match_phrase搜索_利用slop实现近似匹配组合使用" />
+        <item index="4" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索_利用slop实现近似匹配" />
       </list>
     </recent_temporary>
   </component>
@@ -815,12 +813,13 @@
       <workItem from="1579055178369" duration="44520000" />
       <workItem from="1580277046386" duration="5814000" />
       <workItem from="1580544477984" duration="2530000" />
-      <workItem from="1580621676368" duration="4436000" />
+      <workItem from="1580621676368" duration="4520000" />
+      <workItem from="1580705410592" duration="2113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57300000" />
+    <option name="totallyTimeSpent" value="59497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -846,8 +845,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2414163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -950,13 +949,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/common/xcontent/XContentBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -1288,6 +1280,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1536">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索_利用slop实现近似匹配.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2544">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/index/query/QueryBuilders.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -1608,50 +1632,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="91">
+          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索_利用slop实现近似匹配.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1583">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="95">
+          <caret line="28" column="76" lean-forward="false" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="312">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
       </provider>
