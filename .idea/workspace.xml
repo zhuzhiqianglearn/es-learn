@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0eff0f-493d-4e51-adf9-71253bdb668a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/ES Pipeline Aggregation(管道聚合)" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D28_深度探秘搜索技术_实战用function_score自定义相关度分数算法.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D29_深度探秘搜索技术_实战掌握误拼写时的fuzzy模糊搜索技术.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/AggObject.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/DateUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/StringUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/es工具类网址" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/课程笔记.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java" afterPath="$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.class" afterPath="$PROJECT_DIR$/target/classes/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,101 +28,176 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高.java">
+      <file leaf-file-name="D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="641">
+              <caret line="75" column="21" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="75" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java">
+      <file leaf-file-name="D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="641">
+              <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D29_深度探秘搜索技术_实战掌握误拼写时的fuzzy模糊搜索技术.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D29_深度探秘搜索技术_实战掌握误拼写时的fuzzy模糊搜索技术.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D23_深度探秘搜索技术_实战match_phrase_prefix实现search_time搜索推荐.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D21_深度探秘搜索技术_使用rescoring机制优化近似匹配搜索的性能.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D11_深度探秘搜索技术_案例实战基于dis_max实现best_fields策略进行多字段搜索.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D11_深度探秘搜索技术_案例实战基于dis_max实现best_fields策略进行多字段搜索.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D22_深度探秘搜索技术_实战前缀搜索_通配符搜索_正则搜索等技术.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ES Pipeline Aggregation(管道聚合)" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/ES Pipeline Aggregation(管道聚合)">
+      <file leaf-file-name="es工具类网址" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/es工具类网址">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+              <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D02结构化搜索_在案例中实战使用term_filter来搜索数据.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D02结构化搜索_在案例中实战使用term_filter来搜索数据.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/DateUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="785">
+              <caret line="48" column="69" lean-forward="false" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="802" column="6" lean-forward="false" selection-start-line="802" selection-start-column="6" selection-end-line="802" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtendedBounds.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/ExtendedBounds.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="213" column="13" lean-forward="true" selection-start-line="213" selection-start-column="13" selection-end-line="213" selection-end-column="13" />
+              <folding>
+                <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1579057495631" expanded="false" signature="178:1336" ph="..." />
+                <marker date="1579057495631" expanded="true" signature="1802:1813" ph=" { " />
+                <marker date="1579057495631" expanded="true" signature="1856:1862" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="1923:1934" ph=" { " />
+                <marker date="1579057495631" expanded="true" signature="1983:1989" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="2072:2195" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="2258:2447" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="2510:2695" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="2795:3845" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="3891:4037" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="4136:4665" ph="{...}" />
+                <marker date="1579057495631" expanded="false" signature="4692:4703" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="4787:4793" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="4833:5251" ph="{...}" />
+                <marker date="1579057495631" expanded="false" signature="5277:5288" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="5304:5310" ph=" }" />
+                <marker date="1579057495631" expanded="false" signature="5336:5347" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="5363:5369" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="5400:6059" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="6072:8133" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="6327:7374" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="7431:7868" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InternalDateHistogram.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/InternalDateHistogram.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
+              <folding>
+                <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1579057495631" expanded="false" signature="178:1604" ph="..." />
+                <marker date="1579057495631" expanded="true" signature="2460:2823" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="2893:3501" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="3396:3493" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="3569:3916" ph="{...}" />
+                <marker date="1579057495631" expanded="false" signature="3954:3965" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="4009:4015" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="4119:4185" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="4271:4473" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="4603:4743" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="4875:7395" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="5027:5235" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="5156:5225" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="7500:9930" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="10041:10929" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="11032:11557" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="11668:11734" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="11774:11890" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="12032:12602" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="12719:12841" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="12887:13220" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="13091:13214" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="13255:14375" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="13461:13539" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="13645:13780" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="13841:14108" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="14168:14369" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="14514:17572" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="14843:15032" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="15129:15363" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="15430:15565" ph="{...}" />
+                <marker date="1579057495631" expanded="false" signature="15605:15620" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="15656:15666" ph=" }" />
+                <marker date="1579057495631" expanded="false" signature="15698:15713" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="15761:15771" ph=" }" />
+                <marker date="1579057495631" expanded="false" signature="15806:15821" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="15842:15852" ph=" }" />
+                <marker date="1579057495631" expanded="false" signature="15899:15914" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="15939:15949" ph=" }" />
+                <marker date="1579057495631" expanded="true" signature="16062:16710" ph="{...}" />
+                <marker date="1579057495631" expanded="true" signature="16813:17398" ph="{...}" />
+                <marker date="1579057495631" expanded="false" signature="17444:17459" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="17478:17488" ph=" }" />
+                <marker date="1579057495631" expanded="false" signature="17523:17538" ph=" { " />
+                <marker date="1579057495631" expanded="false" signature="17556:17566" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Histogram.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/Histogram.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -143,6 +220,8 @@
       <find>order</find>
       <find>java spark</find>
       <find>params.userCount</find>
+      <find>getBuckets</find>
+      <find>min</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,8 +270,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D18_match_phrase搜索.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/ES Pipeline Aggregation(管道聚合)" />
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/AggObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/es工具类网址" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/es/learn/core/D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量.java" />
       </list>
     </option>
   </component>
@@ -240,6 +327,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,35 +371,43 @@
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="demo2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="StringUtils.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../123" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SearchEverywhereHistoryKey" value="best_fields&#9;PSI&#9;JAVA://org.elasticsearch.index.query.MultiMatchQueryBuilder.Type#BEST_FIELDS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\code\demo2\src\main\java\com\es\learn\core" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.es.learn.core" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\demo2\src\main\java\com\es\learn\core" />
       <recent name="C:\code\demo2\src\main\java\com\es\learn" />
       <recent name="C:\code\demo2\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.es.learn.core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\demo2\src\main\java\com\es\learn\core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,69 +422,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析">
+  <component name="RunManager" selected="Application.D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="D18_match_phrase搜索" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.es.learn.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D18_match_phrase搜索" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="demo2" />
-      <envs />
-    </configuration>
-    <configuration name="D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.es.learn.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="demo2" />
-      <envs />
-    </configuration>
-    <configuration name="D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.es.learn.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="demo2" />
-      <envs />
     </configuration>
     <configuration name="D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -408,14 +448,52 @@
       <module name="demo2" />
       <envs />
     </configuration>
-    <configuration name="EmployeeAggrApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.es.learn.*" />
+          <option name="PATTERN" value="com.es.learn.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.es.learn.EmployeeAggrApp" />
+      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="demo2" />
+      <envs />
+    </configuration>
+    <configuration name="D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.es.learn.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="demo2" />
+      <envs />
+    </configuration>
+    <configuration name="D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.es.learn.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -440,6 +518,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="AggUtils.aa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.es.learn.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="demo2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.es.learn.core" />
+      <option name="MAIN_CLASS_NAME" value="com.es.learn.core.AggUtils" />
+      <option name="METHOD_NAME" value="aa" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -502,19 +605,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索" />
-      <item index="1" class="java.lang.String" itemvalue="Application.D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EmployeeAggrApp" />
-      <item index="3" class="java.lang.String" itemvalue="Application.D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格" />
-      <item index="4" class="java.lang.String" itemvalue="Application.D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析" />
+      <item index="0" class="java.lang.String" itemvalue="Application.D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AggUtils.aa" />
+      <item index="2" class="java.lang.String" itemvalue="Application.D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格" />
+      <item index="3" class="java.lang.String" itemvalue="Application.D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额" />
+      <item index="4" class="java.lang.String" itemvalue="Application.D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析" />
-        <item index="1" class="java.lang.String" itemvalue="Application.D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格" />
-        <item index="2" class="java.lang.String" itemvalue="Application.D34_深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高" />
-        <item index="3" class="java.lang.String" itemvalue="Application.EmployeeAggrApp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.D18_match_phrase搜索" />
+        <item index="0" class="java.lang.String" itemvalue="Application.D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量" />
+        <item index="1" class="java.lang.String" itemvalue="Application.D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额" />
+        <item index="2" class="java.lang.String" itemvalue="Application.D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格" />
+        <item index="3" class="java.lang.String" itemvalue="Application.D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AggUtils.aa" />
       </list>
     </recent_temporary>
   </component>
@@ -546,12 +649,18 @@
       <workItem from="1582450161501" duration="1007000" />
       <workItem from="1582509825301" duration="2901000" />
       <workItem from="1582519314602" duration="6234000" />
-      <workItem from="1582611351841" duration="4328000" />
+      <workItem from="1582611351841" duration="16959000" />
+      <workItem from="1582698163046" duration="9642000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AggUtils_aa - 2020.02.25 at 18h 17m 44s.xml">
+      <configuration name="AggUtils.aa" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82834000" />
+    <option name="totallyTimeSpent" value="105107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -564,12 +673,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65066963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -578,7 +688,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31545064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -586,7 +696,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -607,7 +716,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65066963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -617,7 +726,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31545064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49839056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -634,158 +743,94 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/action/index/IndexRequest.class</url>
           <line>292</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>97</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>100</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>165</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>167</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/SearchTest.java</url>
           <line>171</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/es/learn/core/DateUtils.java</url>
+          <line>47</line>
+          <properties class="com.es.learn.core.DateUtils" method="getDate">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/InternalOrder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/TermsAggregationBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="141" column="46" lean-forward="false" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/Terms.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/jdk1.8/jdk1.8.0_121/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/index/query/BoolQueryBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2832">
-          <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D06__结构化搜索_在案例中实战基于range_filter来进行范围过滤.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D04结构化搜索_在案例中实战基于bool组合多个filter条件来搜索数据.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D05结构化搜索_在案例中实战使用terms搜索多个值以及多值搜索结果优化.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5136">
-          <caret line="117" column="9" lean-forward="false" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D07__深度探秘搜索技术_在案例中体验如何手动控制全文检索结果的精准度.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/index/query/AbstractQueryBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D09_深度探秘搜索技术_基于boost的细粒度搜索条件权重控制.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D13_深度探秘搜索技术_案例实战基于multi_match语法实现dis_max_tie_breaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="31" column="78" lean-forward="false" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D14_深度探秘搜索技术_基于multi_match_most_fiels策略进行multi_field搜索.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D17_深度探秘搜索技术_基于multi_match_most_fiels策略进行cross_field搜索.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -903,14 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D02结构化搜索_在案例中实战使用term_filter来搜索数据.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/Aggregations.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -922,40 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/StringTerms.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1579057495631" expanded="false" signature="174:882" ph="..." />
-            <marker date="1579057495631" expanded="true" signature="1325:1499" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="1559:1610" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="1648:1659" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="1675:1681" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="1747:1995" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2105:2278" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2400:2638" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2741:3193" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="3258:3269" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="3305:3311" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="3444:5403" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3632:3763" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3872:3981" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4055:4113" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="4145:4160" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4189:4199" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4239:4254" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4311:4321" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4361:4376" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4418:4428" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="4525:4620" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4721:4859" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4962:5397" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,59 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1579057495631" expanded="false" signature="174:842" ph="..." />
-            <marker date="1579057495631" expanded="true" signature="1275:1449" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="1507:1556" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="1594:1605" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="1621:1627" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="1689:1935" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2041:2207" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2325:2561" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2664:3112" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="3175:3186" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="3220:3226" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="3357:5347" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3532:3658" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3767:3867" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3941:3990" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="4030:4045" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4082:4092" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4124:4139" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4156:4166" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4206:4221" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4238:4248" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="4345:4438" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4537:4668" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4771:5341" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/InternalMappedTerms.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1579057495631" expanded="false" signature="174:782" ph="..." />
-            <marker date="1579057495631" expanded="true" signature="1487:1826" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="1921:2362" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2256:2354" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2446:2718" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="2775:2786" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="2821:2827" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="2861:2872" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="2894:2900" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="2936:2947" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="2973:2979" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="3021:3032" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="3058:3064" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="3105:3116" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="3136:3142" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="3185:3487" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,33 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1579057495631" expanded="false" signature="174:842" ph="..." />
-            <marker date="1579057495631" expanded="true" signature="1285:1459" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="1519:1570" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="1608:1619" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="1635:1641" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="1707:1955" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2065:2233" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2355:2593" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="2696:3148" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="3213:3224" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="3260:3266" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="3392:5412" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3585:3711" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3820:3922" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="3996:4047" ph="{...}" />
-            <marker date="1579057495631" expanded="false" signature="4087:4102" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4139:4149" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4181:4196" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4213:4223" ph=" }" />
-            <marker date="1579057495631" expanded="false" signature="4263:4278" ph=" { " />
-            <marker date="1579057495631" expanded="false" signature="4295:4305" ph=" }" />
-            <marker date="1579057495631" expanded="true" signature="4402:4499" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4600:4733" ph="{...}" />
-            <marker date="1579057495631" expanded="true" signature="4836:5406" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1536">
           <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,14 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1143,24 +1056,307 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D20_match和match_phrase搜索_利用slop实现近似匹配组合使用.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+        <state relative-caret-position="1584">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D11_深度探秘搜索技术_案例实战基于dis_max实现best_fields策略进行多字段搜索.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="2208">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/metrics/avg/Avg.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/InternalMappedTerms.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/AggObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#185#186#0" expanded="false" />
+            <element signature="e#223#224#0" expanded="false" />
+            <element signature="e#253#254#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+            <element signature="e#409#410#0" expanded="false" />
+            <element signature="e#441#442#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/terms/StringTerms.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579057495631" expanded="false" signature="174:882" ph="..." />
+            <marker date="1579057495631" expanded="true" signature="1325:1499" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="1559:1610" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="1648:1659" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="1675:1681" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="1747:1995" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2105:2278" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2400:2638" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2741:3193" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="3258:3269" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="3305:3311" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="3444:5403" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="3632:3763" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="3872:3981" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4055:4113" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="4145:4160" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="4189:4199" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="4239:4254" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="4311:4321" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="4361:4376" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="4418:4428" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="4525:4620" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4721:4859" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4962:5397" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/jdk1.8/jdk1.8.0_121/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D35_深入聚合数据分析_实战bucket和metric统计每种颜色电视平均价格.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="80" column="19" lean-forward="false" selection-start-line="78" selection-start-column="11" selection-end-line="80" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/metrics/avg/InternalAvg.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579057495631" expanded="false" signature="173:862" ph="..." />
+            <marker date="1579057495631" expanded="true" signature="1146:1287" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="1347:1529" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="1597:1721" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="1748:1759" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="1782:1788" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="1818:1829" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="1866:1872" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="1910:1921" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="1934:1940" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="2043:2501" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2604:2873" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/AggUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌的多层下钻分析.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="-1440">
+          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D02结构化搜索_在案例中实战使用term_filter来搜索数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D37_深入聚合数据分析_掌握更多metrics_统计每种颜色电视最大最小价格.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="75" column="21" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="75" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D38_深入聚合数据分析_实战hitogram按价格区间统计电视销量和销售额.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/es工具类网址">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/client/support/AbstractClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="477" column="32" lean-forward="false" selection-start-line="477" selection-start-column="32" selection-end-line="477" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="802" column="6" lean-forward="false" selection-start-line="802" selection-start-column="6" selection-end-line="802" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/ExtendedBounds.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="213" column="13" lean-forward="true" selection-start-line="213" selection-start-column="13" selection-end-line="213" selection-end-column="13" />
+          <folding>
+            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579057495631" expanded="false" signature="178:1336" ph="..." />
+            <marker date="1579057495631" expanded="true" signature="1802:1813" ph=" { " />
+            <marker date="1579057495631" expanded="true" signature="1856:1862" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="1923:1934" ph=" { " />
+            <marker date="1579057495631" expanded="true" signature="1983:1989" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="2072:2195" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2258:2447" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2510:2695" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2795:3845" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="3891:4037" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4136:4665" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="4692:4703" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="4787:4793" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="4833:5251" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="5277:5288" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="5304:5310" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="5336:5347" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="5363:5369" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="5400:6059" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="6072:8133" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="6327:7374" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="7431:7868" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="48" column="69" lean-forward="false" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/InternalDateHistogram.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
+          <folding>
+            <marker date="1579057495631" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579057495631" expanded="false" signature="178:1604" ph="..." />
+            <marker date="1579057495631" expanded="true" signature="2460:2823" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="2893:3501" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="3396:3493" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="3569:3916" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="3954:3965" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="4009:4015" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="4119:4185" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4271:4473" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4603:4743" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="4875:7395" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="5027:5235" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="5156:5225" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="7500:9930" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="10041:10929" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="11032:11557" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="11668:11734" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="11774:11890" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="12032:12602" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="12719:12841" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="12887:13220" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="13091:13214" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="13255:14375" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="13461:13539" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="13645:13780" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="13841:14108" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="14168:14369" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="14514:17572" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="14843:15032" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="15129:15363" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="15430:15565" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="15605:15620" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="15656:15666" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="15698:15713" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="15761:15771" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="15806:15821" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="15842:15852" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="15899:15914" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="15939:15949" ph=" }" />
+            <marker date="1579057495631" expanded="true" signature="16062:16710" ph="{...}" />
+            <marker date="1579057495631" expanded="true" signature="16813:17398" ph="{...}" />
+            <marker date="1579057495631" expanded="false" signature="17444:17459" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="17478:17488" ph=" }" />
+            <marker date="1579057495631" expanded="false" signature="17523:17538" ph=" { " />
+            <marker date="1579057495631" expanded="false" signature="17556:17566" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.2.2/elasticsearch-5.2.2.jar!/org/elasticsearch/search/aggregations/bucket/histogram/Histogram.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/es/learn/core/D39_深入聚合数据分析_实战date_hitogram之统计每月电视销量.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding />
         </state>
       </provider>

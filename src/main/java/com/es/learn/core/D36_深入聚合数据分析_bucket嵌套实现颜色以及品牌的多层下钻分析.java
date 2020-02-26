@@ -14,8 +14,10 @@ import org.elasticsearch.search.aggregations.bucket.terms.Terms;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
 import org.elasticsearch.search.aggregations.metrics.avg.Avg;
 import org.elasticsearch.search.aggregations.metrics.avg.AvgAggregationBuilder;
+import org.elasticsearch.search.aggregations.metrics.avg.InternalAvg;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
+import java.io.IOException;
 import java.net.InetAddress;
 import java.util.Iterator;
 import java.util.Map;
@@ -28,7 +30,7 @@ public class D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌�
 
         TransportClient client = new PreBuiltTransportClient(settings)
                 .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
-        query(client);
+        query1(client);
         client.close();
     }
     public static void query(TransportClient client){
@@ -76,6 +78,24 @@ public class D36_深入聚合数据分析_bucket嵌套实现颜色以及品牌�
         }
 
     }
+    public static void query1(TransportClient client) throws IOException {
+        TermsAggregationBuilder color = AggregationBuilders.terms("group_by_color").field("color");
+        TermsAggregationBuilder brand = AggregationBuilders.terms("group_by_brand").field("brand");
+        AvgAggregationBuilder price = AggregationBuilders.avg("avg_color_brand").field("price");
+        SearchResponse searchResponse = client.prepareSearch("tvs")
+                .setTypes("sales")
+                .setSize(0)
+                .addAggregation(color.subAggregation(
+                        brand.subAggregation(
+                                price)))
+                .get();
+        Map<String, Aggregation> stringAggregationMap =
+                searchResponse.getAggregations().asMap();
+        AggUtils.getResults(stringAggregationMap,"StringTerms","StringTerms", "avg");
+
+    }
+
+
   /*
   GET  /tvs/sales/_search
  {
